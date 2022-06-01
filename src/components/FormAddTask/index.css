@@ -1,0 +1,35 @@
+.form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.input-add-task {
+  flex: 1;
+  padding: var(--spacing-sm);
+  outline: none;
+  border-radius: 5px;
+  border: 2px #718093 solid;
+  margin-right: 8px;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.input-add-task:focus {
+  outline: #7f8fa6 2px solid;
+  outline-offset: 2px;
+}
+
+.btn-add-task {
+  outline: none;
+  padding: var(--spacing-sm) 20px;
+  background: #0097e6;
+  border: 2px transparent solid;
+  border-radius: 5px;
+  color: var(--color-text);
+}
+
+.btn-add-task:focus {
+  outline: #00a8ff 2px solid;
+  outline-offset: 2px;
+}

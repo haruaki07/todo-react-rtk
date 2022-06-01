@@ -1,0 +1,46 @@
+.app {
+  height: 100%;
+  background: var(--color-background);
+  display: flex;
+  flex-direction: column;
+}
+
+.app-content,
+.app-header {
+  align-self: center;
+  max-width: var(--breakpoint-md);
+  width: 100%;
+  color: var(--color-text);
+  padding: 0 var(--spacing-md);
+}
+
+.app-content {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+  padding-top: 4px;
+  scrollbar-width: thin;
+}
+
+.app-content::-webkit-scrollbar {
+  background-color: #222;
+  width: 5px;
+}
+
+.app-content::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+}
+
+.app-header {
+  flex-shrink: 0;
+  padding-bottom: 20px;
+}
+
+.app-title {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 24px 0;
+}
